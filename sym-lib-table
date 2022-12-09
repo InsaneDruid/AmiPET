@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "amipet")(type "KiCad")(uri "${KIPRJMOD}/amipet.kicad_sym")(options "")(descr ""))
+)
