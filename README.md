@@ -1,6 +1,12 @@
 # AmiPET
-Adapter to use Amiga keyboards on Commodore PET computers.
-Uses an arduino to communicate with an Amiga keyboard and a M3493B2 Crosspoint to control the PET keyboard matrix.
+A simple Arduino Shield which offers the possibility to use Amiga keyboards on Commodore PET computers.
+It uses the Arduino to communicate with an Amiga keyboard and control a M3493B2 Crosspoint to switch the PET keyboard matrix.
+
+![AmiPET render](https://github.com/InsaneDruid/AmiPET/blob/main/images/AmiPET_render.png)
+
+[Schematic](https://github.com/InsaneDruid/AmiPET/blob/main/AmiPET.pdf "Schematic")  
+
+[Bill of Materials](https://htmlpreview.github.io/?https://github.com/InsaneDruid/AmiPET/blob/main/bom/AmiPET_bom.html "Bill of Materials")
 
 ## Background
 Amiga side sends *rawkey* codes to the Arduino. An array of tupels contains bitvalues for the M3493B2 to switch the PET keyboard matrix rows and columns to the appropriate key. Entries represent Amiga rawkey codes #00 to #68 (0-103 decimal).
@@ -40,5 +46,8 @@ Result: {0b00000101, 0b10010000}
 + The PET keyboard connector gets connected to the X0-X9 pins (rows) and the Y0-Y7 pins (colums) of the M3493B2 as well as Ground.
 
 ## Printable Parts
+
+![3D printable case render](https://github.com/InsaneDruid/AmiPET/blob/main/images/case_render.png)
+
 + *DIN_Connector_Mount .stl* can be used to mount the DIN Connector in place of the keyboard connector of an 8032-SK/8296.
 + *Case_Top.stl* and *Case_Bottom.stl* are designed to fit an Uno with the M3493B2 shield mounted.
